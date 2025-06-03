@@ -1,8 +1,8 @@
 ## Monte Carlo Simulations for Portfolio Optimization
 
 ### AWS Services used: IAM, S3, DynamoDB, Lambda, Batch, EC2, ECR, Step Functions, Cloudwatch
-### Technical Libraries used: Pandas, Numpy, Matplotlib, YFinance
-### High Level Architecture: Leveraged AWS services to preprocess financial data, run large-scale parallel simulations, analyze risk-return profiles, and identify optimal asset allocations—all orchestrated through serverless workflows
+### High Level Architecture: 
+Leveraged AWS services to preprocess financial data, run large-scale parallel simulations, analyze risk-return profiles, and identify optimal asset allocations—all orchestrated through serverless workflows
 1. Fetch and process historical financial data: Created YFinance Layer with EC2 (dockerization) to gather >5 years of data in Lambda script. Used tickers from a variety of sectors, checked covariance with a covariance matrix (Want a low value). For this project, I used META, GM, NVDA, JPM, GAP, GLD, PLTR, SPY. Analyzed and returned annualized mean returns and volatility; saved into s3 bucket for further processing in AWS Batch.
 2. Run monte-carlo simulations to model future portfolio outcomes in AWS Batch: Dockerized python script to a container image in Docker, then pushed to ECR to use in AWS Batch. Ran 10 concurrent jobs where each job predicts 100 portfolio price paths with 10,000 simulations per portfolio on EC2 servers for cost optimization.
 3. Optimization: Combined .csv files from Batch jobs (10 .csv files) into one then ran script to find optimal max sharpe/min vol portfolios out of pool of 10,000 portfolios inside AWS lambda. Stored results into DynamoDB table.
