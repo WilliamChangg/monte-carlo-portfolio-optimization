@@ -10,12 +10,12 @@ Leveraged AWS services to preprocess financial data, run large-scale parallel si
 5. Visualization: Visualized results with a risk-return scatter plot and an efficient frontier with matplotlib in AWS Lambda. Stored plots in S3.
 6. Automation: Used AWS Step functions to automate and manage end-to-end workflow from data collection to visualization: 1) Trigger AWS lambda functions (fetch_data -> get_statistical_paramters) 2) Start AWS batch jobs (monte_carlo_sim) 3) Trigger lambda func (combine_results -> visualize_results). 4) Included Cloudwatch to track and handle logging and errors.
 
-### Results (Initial Portfolio Value: $100,000)
-**Optimal Max Sharpe Portfolio** (After 252 Trading Days): $137696.19, Sharpe: 1.202, Volatility: 0.258
+### Results (Initial Portfolio Value: $100,000):
+**Optimal Max Sharpe Portfolio** (After 252 Trading Days): Returns: $137696.19, Sharpe: 1.202, Volatility: 0.258
 
 **Weights:** {GAP: 0.0357, GLD: 0.499, GM: 0.0087, JPM: 0.235, META: 0.00466, NVDA: 0.0732, PLTR: 0.0695, SPY: 0.0741}
 
-**Optimal Min Sharpe Portfolio** (After 252 Trading Days): #121964.28, Sharpe: 0.977, Volatility: 0.193
+**Optimal Min Sharpe Portfolio** (After 252 Trading Days): Returns: $121964.28, Sharpe: 0.977, Volatility: 0.193
 
 **Weights:** {GAP: 0.123, GLD: 0.679, GM: 0.0564, JPM: 0.000379, META: 0.00508, NVDA: 0.0332, PLTR: 0.0202, SPY: 0.0827}
 
