@@ -23,4 +23,9 @@ Leveraged AWS services to preprocess financial data, run large-scale parallel si
 
 Total Cost of Project: $3.42 (Mostly EC2 costs for AWS Batch jobs)
 
+Resources Used: 
+DOI: 10.54254/2754-1169/50/20230568
+https://www.investopedia.com/terms/m/montecarlosimulation.asp
+https://medium.com/@beingamanforever/portfolio-optimisation-using-monte-carlo-simulation-25d88003782e
+AWS Documentations
 
