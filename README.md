@@ -12,6 +12,7 @@ Leveraged AWS services to preprocess financial data, run large-scale parallel si
 
 ### Results (Initial Portfolio Value: $100,000)
 **Optimal Max Sharpe Portfolio** (After 252 Trading Days): $137696.19, Sharpe: 1.202, Volatility: 0.258, Weights: {GAP: 0.0357, GLD: 0.499, GM: 0.0087, JPM: 0.235, META: 0.00466, NVDA: 0.0732, PLTR: 0.0695, SPY: 0.0741}
+
 **Optimal Min Sharpe Portfolio** (After 252 Trading Days): #121964.28, Sharpe: 0.977, Volatility: 0.193, Weights: {GAP: 0.123, GLD: 0.679, GM: 0.0564, JPM: 0.000379, META: 0.00508, NVDA: 0.0332, PLTR: 0.0202, SPY: 0.0827}
 
 Total Cost of Project: $3.42 (Mostly EC2 costs for AWS Batch jobs)
