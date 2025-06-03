@@ -19,6 +19,8 @@ Leveraged AWS services to preprocess financial data, run large-scale parallel si
 
 **Weights:** {GAP: 0.123, GLD: 0.679, GM: 0.0564, JPM: 0.000379, META: 0.00508, NVDA: 0.0332, PLTR: 0.0202, SPY: 0.0827}
 
+<img width="804" alt="image" src="https://github.com/user-attachments/assets/03fe0843-638c-4b00-966b-7c4677bf4b76" />
+
 Total Cost of Project: $3.42 (Mostly EC2 costs for AWS Batch jobs)
 
 
