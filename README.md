@@ -15,7 +15,7 @@ Leveraged AWS services to preprocess financial data, run large-scale parallel si
 
 **Weights:** {GAP: 0.0357, GLD: 0.499, GM: 0.0087, JPM: 0.235, META: 0.00466, NVDA: 0.0732, PLTR: 0.0695, SPY: 0.0741}
 
-**Optimal Min Sharpe Portfolio** (After 252 Trading Days): Returns: $121964.28, Sharpe: 0.977, Volatility: 0.193
+**Optimal Min Volatility Portfolio** (After 252 Trading Days): Returns: $121964.28, Sharpe: 0.977, Volatility: 0.193
 
 **Weights:** {GAP: 0.123, GLD: 0.679, GM: 0.0564, JPM: 0.000379, META: 0.00508, NVDA: 0.0332, PLTR: 0.0202, SPY: 0.0827}
 
